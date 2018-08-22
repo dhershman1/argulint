@@ -9,42 +9,13 @@ PRs fully welcome, come up with some sick nasty messaging combos, improve the li
 
 This project follows the [JS Standard Style](https://standardjs.com/) guidelines
 
+## What
+
+Argulint is a small module that you can pipe data into from the [`standardjs`](https://standardjs.com/) module.
+
+It will then take the output and convert it into a more... Argulint esk manner to print to the terminal.
+
 ## TODO
 
-- Allow options to be passed in via the package.json
-- Add file names and line numbers onto the message
-- Supporting more `rules`
-- Clean up semi colon rule
-- Setup a standardized testing system
-- CLI support
-- A _better_ way to run it?
-- Automate generating the rules index.js
-- Documentation
-- ???
-
-## Options
-
-`argulint` accepts an options object to get started
-
-- `patterns`: `Array[String]` - An array of pattern strings to lint through
-- `ignore`: `Array[String]` - An array of patterns the linter will use to ignore
-
-#### Defaults
-
-The option defaults look like so:
-
-```js
-{
-  patterns: [
-    '**/*.js',
-    '**/*.jsx'
-  ],
-  ignore: [
-    'node_modules/**',
-    '**/*.min.js',
-    '**/bundle.js',
-    'coverage/**',
-    'vendor/**'
-  ]
-}
-```
+- Convert the data piped into argulint responses
+- Give that data back to the interface
