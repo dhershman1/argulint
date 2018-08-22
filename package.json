@@ -1,0 +1,31 @@
+{
+  "name": "argulint",
+  "version": "0.0.1",
+  "description": "Tired of your linter being nice to you? Want to be treated like the terrible developer you are? Welcome.",
+  "main": "index.js",
+  "dependencies": {
+    "globby": "8.0.1",
+    "kyanite": "0.6.0"
+  },
+  "devDependencies": {
+    "standard": "11.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhershman1/argulint.git"
+  },
+  "keywords": [
+    "linter",
+    "funny",
+    "parody"
+  ],
+  "author": "Dustin Hershman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhershman1/argulint/issues"
+  },
+  "homepage": "https://github.com/dhershman1/argulint#readme"
+}
