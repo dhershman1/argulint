@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "Tired of your linter being nice to you? Want to be treated like the terrible developer you are? Welcome.",
   "main": "index.js",
+  "bin": {
+    "argulint": "bin/argulint"
+  },
   "dependencies": {
-    "fs-extra": "7.0.0",
+    "duplexer2": "0.1.4",
     "globby": "8.0.1",
     "kyanite": "0.6.0"
   },
@@ -13,7 +16,8 @@
     "standard": "11.0.1"
   },
   "scripts": {
-    "test": "node -r esm src/rules/semicolon.js"
+    "lint": "standard tests/index.js",
+    "test": "standard tests/index.js | bin/argulint"
   },
   "repository": {
     "type": "git",

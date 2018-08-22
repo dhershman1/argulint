@@ -1,0 +1,6 @@
+#! /usr/bin/env node
+
+const argulint = require('../src/index.js')
+
+process.stdin
+  .pipe(argulint())
