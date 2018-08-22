@@ -16,7 +16,7 @@
   },
   "scripts": {
     "lint": "standard tests/index.js",
-    "test": "standard tests/index.js | bin/argulint"
+    "test": "standard tests/*.js | bin/argulint"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,10 @@
   "keywords": [
     "linter",
     "funny",
-    "parody"
+    "parody",
+    "converter",
+    "fun",
+    "standardjs"
   ],
   "author": "Dustin Hershman",
   "license": "MIT",
