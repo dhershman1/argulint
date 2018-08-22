@@ -1,5 +1,5 @@
 // Build insult
-export default [
+module.exports = [
   'butter humping melon sack',
   'wart milking doodle bag',
   'seal drinking butt bender',

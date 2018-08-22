@@ -1,5 +1,5 @@
-export default [
-  'fix it!',
+module.exports = [
+  'Fix it! Fix it! Fix it!',
   'throw it away',
   'ctrl + a + del',
   'thanks, I hate it',

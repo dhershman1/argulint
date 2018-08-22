@@ -1,15 +1,33 @@
-import endings from './endings'
-import insults from './insults'
-import triggers from './triggers'
+const endings = require('./endings')
+const insults = require('./insults')
+const words = require('kyanite/words')
 
 const randoNum = by => Math.floor(Math.random() * by)
 
-const generate = trig => {
+const fixGrammar = msg => {
+  const [first] = words(msg)
+  const lines = {
+    extra: 'you didn\'t notice the',
+    expected: 'it',
+    unexpected: 'you didn\'t notice the'
+  }
 
+  // console.log(first)
+  const res = lines[first.toLowerCase()]
+
+  if (res) {
+    return res
+  }
+
+  return 'the'
+}
+
+const generate = msg => {
+  const mid = fixGrammar(msg)
   const ins = insults[randoNum(insults.length)]
   const end = endings[randoNum(endings.length)]
 
-  return `What is this ${trig} you ${ins} ${end}`
+  return `You're such a ${ins} ${mid} ${msg} ${end}`
 }
 
-export default generate
+module.exports = generate
