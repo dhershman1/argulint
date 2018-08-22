@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "duplexer2": "0.1.4",
-    "globby": "8.0.1",
     "kyanite": "0.6.0"
   },
   "devDependencies": {
