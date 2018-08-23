@@ -4,6 +4,7 @@ const words = require('kyanite/words')
 
 const randoNum = by => Math.floor(Math.random() * by)
 
+// This may need expanded upon as well as a more reliable way of reading messages
 const adjustGrammar = msg => {
   const [first] = words(msg)
   const lines = {
