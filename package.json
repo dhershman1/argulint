@@ -28,6 +28,11 @@
     "fun",
     "standardjs"
   ],
+  "standard": {
+    "ignore": [
+      "node_modules/**"
+    ]
+  },
   "author": "Dustin Hershman",
   "license": "MIT",
   "bugs": {

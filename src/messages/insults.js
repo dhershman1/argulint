@@ -74,7 +74,9 @@ module.exports = {
     ],
     insults: [
       'Do you have to leave so soon? I was just about to poison the tea',
-      'Thou art a flesh-monger, a fool and a coward'
+      'Thou art a flesh-monger, a fool and a coward',
+      'Have you always hated yourself this much, or is this new',
+      'I\'ll go get the .22, go wait out back for me'
     ]
   }
 }
