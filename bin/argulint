@@ -6,7 +6,7 @@ const path = require('path')
 const remove = require('kyanite/remove')
 
 const opts = require(path.resolve(process.cwd(), 'package.json')).standard || {}
-const fixIndex = process.argv.indexOf('fix')
+const fixIndex = process.argv.indexOf('--fix')
 let files = []
 
 if (fixIndex !== -1) {
