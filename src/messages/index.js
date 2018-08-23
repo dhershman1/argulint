@@ -1,33 +1,50 @@
 const endings = require('./endings')
-const insults = require('./insults')
+const insultData = require('./insults')
 const words = require('kyanite/words')
 
 const randoNum = by => Math.floor(Math.random() * by)
 
-const fixGrammar = msg => {
+const adjustGrammar = msg => {
   const [first] = words(msg)
   const lines = {
-    extra: 'you didn\'t notice the',
-    expected: 'it',
-    unexpected: 'you didn\'t notice the'
+    extra: 'You didn\'t notice the',
+    expected: 'It',
+    unexpected: 'You didn\'t notice the'
   }
 
-  // console.log(first)
   const res = lines[first.toLowerCase()]
 
   if (res) {
     return res
   }
 
-  return 'the'
+  return 'The'
 }
 
-const generate = msg => {
-  const mid = fixGrammar(msg)
-  const ins = insults[randoNum(insults.length)]
-  const end = endings[randoNum(endings.length)]
+const getTier = rule => {
+  // Since medium will be our catch all if the special condition
+  // For either of the others is not met, we don't need to keep it here
+  const tiersObj = {
+    short: insultData.short.triggers,
+    long: insultData.long.triggers
+  }
 
-  return `You're such a ${ins} ${mid} ${msg} ${end}`
+  return Object.keys(tiersObj).find(x => x.includes(rule)) || 'medium'
+}
+
+const generate = list => {
+  list.forEach(x => {
+    const lines = x.endLine || x.endColumn
+      ? `between line ${x.line}:${x.column} and ${x.endLine}:${x.endColumn}`
+      : `on line ${x.line}:${x.column}`
+    const mid = adjustGrammar(x.message)
+    const { insults } = insultData[getTier(x.ruleId)]
+    const ins = insults[randoNum(insults.length)]
+    const end = endings[randoNum(endings.length)]
+
+    console.log(`You're such a ${ins}!
+  ${mid} ${x.message} ${lines} ${end}`)
+  })
 }
 
 module.exports = generate

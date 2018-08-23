@@ -1,6 +1,37 @@
 #! /usr/bin/env node
 
 const argulint = require('../src/index.js')
+const standard = require('standard')
+const path = require('path')
+const remove = require('kyanite/remove')
 
-process.stdin
-  .pipe(argulint())
+const opts = require(path.resolve(process.cwd(), 'package.json')).standard || {}
+const fixIndex = process.argv.indexOf('fix')
+let files = []
+
+if (fixIndex !== -1) {
+  opts.fix = true
+  files = remove(fixIndex, process.argv).splice(2)
+} else {
+  files = process.argv.splice(2)
+}
+
+if (!files.length) {
+  console.error('You forgot to provide some paths you fool!')
+
+  return process.exit(1)
+}
+
+standard.lintFiles(files, opts, (err, { results, errorCount, fixableErrorCount }) => {
+  if (err) {
+    console.error(err)
+
+    return process.exit(1)
+  }
+
+  return argulint({
+    results,
+    errorCount,
+    fixable: fixableErrorCount
+  })
+})

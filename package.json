@@ -7,16 +7,13 @@
     "argulint": "bin/argulint"
   },
   "dependencies": {
-    "duplexer2": "0.1.4",
+    "standard": "11.0.1",
     "kyanite": "0.6.0"
   },
-  "devDependencies": {
-    "esm": "3.0.79",
-    "standard": "11.0.1"
-  },
+  "devDependencies": {},
   "scripts": {
-    "lint": "standard tests/index.js",
-    "test": "standard tests/*.js | bin/argulint"
+    "lint": "standard src/**/*.js",
+    "test": "bin/argulint tests/*.js"
   },
   "repository": {
     "type": "git",

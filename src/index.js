@@ -1,38 +1,41 @@
-const convert = require('./convert')
-const duplexer = require('duplexer2')
-const stream = require('stream')
+const generate = require('./messages')
+const branch = require('kyanite/branch')
+const lte = require('kyanite/lte')
 
-const argulint = () => {
-  const readable = new stream.Readable({ objectMode: true })
-  const writable = new stream.Writable({ objectMode: true })
-  let results = []
+const errCountStat = count => {
+  const fn = lte(count)
 
-  writable._write = (input, _, done) => {
-    if (readable.push(input)) {
-      return done()
-    }
-
-    readable.once('drain', done)
+  if (fn(10)) {
+    return 'Did we forget about an oopsie?'
   }
 
-  // no-op
-  readable._read = () => {}
+  if (fn(20)) {
+    return 'Seriously?'
+  }
 
-  const dup = duplexer(writable, readable)
+  return 'Alright you\'re done get out.'
+}
 
-  dup.on('data', e => {
-    // This regex gets the file & everything after it
-    const reg = /[a-z]+\.js.+/gi
+const argulint = ({ results, errorCount, fixable }) => {
+  const errMsg = branch(
+    x => x === 0,
+    () => 'Great Job!',
+    x => errCountStat(x)
+  )
 
-    results = results.concat(e.toString().match(reg))
+  console.log('=======Totals=======')
+  console.log(`# of Errors: ${errorCount} - ${errMsg(errorCount)}`)
+  console.log(`# Fixable: ${fixable} - Put me in coach!`)
+  console.log('====================')
+
+  results.forEach(x => {
+    console.log('\n', x.filePath)
+    console.log('=====================================')
+    console.log(`# of Errors: ${x.errorCount} - ${errMsg(x.errorCount)}`)
+    console.log(`# Fixable: ${x.fixableErrorCount}`)
+    console.log('=====================================')
+    generate(x.messages)
   })
-
-  dup.on('finish', () => {
-    console.log('finish event')
-    convert(results)
-  })
-
-  return dup
 }
 
 module.exports = argulint
