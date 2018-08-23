@@ -30,7 +30,7 @@ const getTier = rule => {
     long: insultData.long.triggers
   }
 
-  return Object.keys(tiersObj).find(x => x.includes(rule)) || 'medium'
+  return Object.keys(tiersObj).find(x => tiersObj[x].includes(rule)) || 'medium'
 }
 
 const generate = list => {
@@ -39,11 +39,12 @@ const generate = list => {
       ? `between line ${x.line}:${x.column} and ${x.endLine}:${x.endColumn}`
       : `on line ${x.line}:${x.column}`
     const mid = adjustGrammar(x.message)
-    const { insults } = insultData[getTier(x.ruleId)]
+    const tier = getTier(x.ruleId)
+    const { insults } = insultData[tier]
     const ins = insults[randoNum(insults.length)]
     const end = endings[randoNum(endings.length)]
 
-    console.log(`You're such a ${ins}!
+    console.log(`${tier === 'long' ? '' : 'You\'re such a'} ${ins}!
   ${mid} ${x.message} ${lines} ${end}`)
   })
 }

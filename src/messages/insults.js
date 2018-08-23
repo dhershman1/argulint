@@ -72,7 +72,7 @@ module.exports = {
       'no-unsafe-finally'
     ],
     insults: [
-      'Do you have to leave so soon? I was just about to poison the tea.',
+      'Do you have to leave so soon? I was just about to poison the tea',
       'Thou art a flesh-monger, a fool and a coward'
     ]
   }
