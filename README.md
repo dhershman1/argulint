@@ -9,13 +9,17 @@ PRs fully welcome, come up with some sick nasty messaging combos, improve the li
 
 This project follows the [JS Standard Style](https://standardjs.com/) guidelines
 
+The rules are simple, please follow them as they are marked inside of both `insults.js` and `endings.js` any PR not following these rules will be declined
+
 ## What
 
-Argulint is a small module that you can pipe data into from the [`standardjs`](https://standardjs.com/) module.
+Argulint is a little linter wrapper that runs the [`standardjs`](https://standardjs.com/) lint process but adds a fun twist to it.
 
-It will then take the output and convert it into a more... Argulint esk manner to print to the terminal.
+The only goal is to have a little fun with your linting.
 
-## TODO
+## Features
 
-- Convert the data piped into argulint responses
-- Give that data back to the interface
+- A simple CLI tool, it is just running [`standardjs`](https://standardjs.com/) under the hood
+- Which means it still works with standard options in the `package.json` as well as the `--fix` argument in the CLI
+- Re formats the output with _some_ extra organization
+- Insults your mistakes for fun
