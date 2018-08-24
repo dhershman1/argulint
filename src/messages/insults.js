@@ -31,13 +31,13 @@ module.exports = {
       'You crotch biscuit',
       'You garbage mammal',
       'You little douche socket',
-      'You Math tutor',
-      'You Mother lover',
-      'You Mung tongue',
-      'You Nearsighted gynecologist',
-      'You Pinhead',
-      'You Prison barber',
-      'You Substitute chemistry teacher',
+      'You math tutor',
+      'You mother lover',
+      'You mung tongue',
+      'You nearsighted gynecologist',
+      'You pinhead',
+      'You prison barber',
+      'You substitute chemistry teacher',
       'You trash waffle',
       'You\'re a capitalist pig',
       'You\'re a lazy knob'
@@ -88,10 +88,10 @@ module.exports = {
       'Have you always hated yourself this much, or is this new',
       'I\'ll go get the .22, go wait out back for me',
       'Thou art a flesh-monger, a fool and a coward',
-      'why don\'t you just go suck on a dead dog\'s nose',
+      'Why don\'t you just go suck on a dead dog\'s nose',
       'You are fart factory, slug-slimed, sack-of-rat-guts-in-cat-vomit, cheesy, scab-picked, pimple-squeezing finger bandage. A week old maggot burger with everything on it and flies on the side!',
       'You Boil-dripping beef, fart-sniffing bubble butt!',
-      'You lewd, crude, rude, bag of pre-chewed food dude',
+      'You\'re a lewd, crude, rude, bag of pre-chewed food dude',
       'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!'
     ]
   }
