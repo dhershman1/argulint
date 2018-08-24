@@ -26,27 +26,27 @@ module.exports = {
       'yoda'
     ],
     insults: [
-      'You boner jockey',
-      'You\'re a capitalist pig',
-      'You crotch biscuit',
-      'You little douche socket',
-      'You garbage mammal',
-      'You\'re a lazy knob',
       'Why you little commie',
-      'You trash waffle'
+      'You boner jockey',
+      'You crotch biscuit',
+      'You garbage mammal',
+      'You little douche socket',
+      'You trash waffle',
+      'You\'re a capitalist pig',
+      'You\'re a lazy knob'
     ]
   },
   // Medium tier insults: Try to stick to a max of 7-8 words
   medium: {
     insults: [
-      'You little anal stinking leg zoo',
-      'You\'re such a butter humping melon sack',
-      'Why you fart pimping melon breeder',
       'Gah, what a horse faced butter drinker',
-      'You lard sniffing poop herder',
-      'You stupid seal drinking butt bender',
+      'Go away you, wart milking doodle bag',
+      'Why you fart pimping melon breeder',
       'Why you sheep sucking earwax poker',
-      'Go away you, wart milking doodle bag'
+      'You lard sniffing poop herder',
+      'You little anal stinking leg zoo',
+      'You stupid seal drinking butt bender',
+      'You\'re such a butter humping melon sack'
     ]
   },
   // Long tier insults: Get creative but not too much keep it interesting!
@@ -72,11 +72,11 @@ module.exports = {
       'no-unused-vars'
     ],
     insults: [
+      'Do you have no self respect?',
       'Do you have to leave so soon? I was just about to poison the tea',
-      'Thou art a flesh-monger, a fool and a coward',
       'Have you always hated yourself this much, or is this new',
       'I\'ll go get the .22, go wait out back for me',
-      'Do you have no self respect?'
+      'Thou art a flesh-monger, a fool and a coward'
     ]
   }
 }
