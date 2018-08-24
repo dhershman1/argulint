@@ -46,6 +46,7 @@ module.exports = {
   // Medium tier insults: Try to stick to a max of 7-8 words
   medium: {
     insults: [
+      'Don\'t quit your day job. Oh, wait...',
       'Gah, what a horse faced butter drinker',
       'Go away you, wart milking doodle bag',
       'In your face, camel cake!',
@@ -57,7 +58,8 @@ module.exports = {
       'You little anal stinking leg zoo',
       'You stupid seal drinking butt bender',
       'You... you man! Stupid, stupid man!',
-      'You\'re such a butter humping melon sack'
+      'You\'re such a butter humping melon sack',
+      'You\'re the reason we don\'t have nice things'
     ]
   },
   // Long tier insults: Get creative but not too much keep it interesting!
@@ -87,6 +89,7 @@ module.exports = {
       'Do you have to leave so soon? I was just about to poison the tea',
       'Have you always hated yourself this much, or is this new',
       'I\'ll go get the .22, go wait out back for me',
+      'I\'m not proud of you, your mom\'s not proud of you, no one is proud of you',
       'Thou art a flesh-monger, a fool and a coward',
       'Why don\'t you just go suck on a dead dog\'s nose',
       'You Boil-dripping beef, fart-sniffing bubble butt!',
