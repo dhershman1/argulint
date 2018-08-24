@@ -44,7 +44,7 @@ const generate = list => {
     const ins = insults[randoNum(insults.length)]
     const end = endings[randoNum(endings.length)]
 
-    console.log(`${tier === 'long' ? '' : 'You\'re such a'} ${ins}!
+    console.log(`${ins}!
   ${mid} ${x.message} ${lines} ${end}`)
   })
 }

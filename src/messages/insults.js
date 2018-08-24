@@ -6,7 +6,7 @@
 
 // All insults that do not meet the above rules will be met with an instant decline of their PR
 module.exports = {
-  // Short tier insults: minimum of 1 word maximum of 3 words
+  // Short tier insults: Try to keep it to only a few words
   short: {
     triggers: [
       'eol-last',
@@ -26,30 +26,31 @@ module.exports = {
       'yoda'
     ],
     insults: [
-      'boner jockey',
-      'capitalist pig',
-      'crotch biscuit',
-      'douche socket',
-      'garbage mammal',
-      'lazy knob',
-      'little commie',
-      'trash waffle'
+      'You boner jockey',
+      'You\'re a capitalist pig',
+      'You crotch biscuit',
+      'You little douche socket',
+      'You garbage mammal',
+      'You\'re a lazy knob',
+      'Why you little commie',
+      'You trash waffle'
     ]
   },
-  // Medium tier insults: minimum of 4 words maximum of 6 words
+  // Medium tier insults: Try to stick to a max of 7-8 words
   medium: {
     insults: [
-      'anal stinking leg zoo',
-      'butter humping melon sack',
-      'fart pimping melon breeder',
-      'horse faced butter drinker',
-      'lard sniffing poop herder',
-      'seal drinking butt bender',
-      'sheep sucking earwax poker',
-      'wart milking doodle bag'
+      'You little anal stinking leg zoo',
+      'You\'re such a butter humping melon sack',
+      'Why you fart pimping melon breeder',
+      'Gah, what a horse faced butter drinker',
+      'You lard sniffing poop herder',
+      'You stupid seal drinking butt bender',
+      'Why you sheep sucking earwax poker',
+      'Go away you, wart milking doodle bag'
     ]
   },
-  // Long tier insults: minimum of 7 words maximum of 20(?) words
+  // Long tier insults: Get creative but not too much keep it interesting!
+  // Long insults remove the "You're such a" at the beginning
   // (?) = possibly subject to change, based on how we handle the wall of text problems
   long: {
     triggers: [
@@ -76,7 +77,8 @@ module.exports = {
       'Do you have to leave so soon? I was just about to poison the tea',
       'Thou art a flesh-monger, a fool and a coward',
       'Have you always hated yourself this much, or is this new',
-      'I\'ll go get the .22, go wait out back for me'
+      'I\'ll go get the .22, go wait out back for me',
+      'Do you have no self respect?'
     ]
   }
 }
