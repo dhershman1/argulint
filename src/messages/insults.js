@@ -31,6 +31,13 @@ module.exports = {
       'You crotch biscuit',
       'You garbage mammal',
       'You little douche socket',
+      'You math tutor',
+      'You mother lover',
+      'You mung tongue',
+      'You nearsighted gynecologist',
+      'You pinhead',
+      'You prison barber',
+      'You substitute chemistry teacher',
       'You trash waffle',
       'You\'re a capitalist pig',
       'You\'re a lazy knob'
@@ -42,11 +49,15 @@ module.exports = {
       'Don\'t quit your day job. Oh, wait...',
       'Gah, what a horse faced butter drinker',
       'Go away you, wart milking doodle bag',
+      'In your face, camel cake!',
+      'In your rear, cow derrière',
+      'Lying, crying, spying, prying ultra-pig',
       'Why you fart pimping melon breeder',
       'Why you sheep sucking earwax poker',
       'You lard sniffing poop herder',
       'You little anal stinking leg zoo',
       'You stupid seal drinking butt bender',
+      'You... you man! Stupid, stupid man!',
       'You\'re such a butter humping melon sack',
       'You\'re the reason we don\'t have nice things'
     ]
@@ -79,7 +90,11 @@ module.exports = {
       'Have you always hated yourself this much, or is this new',
       'I\'ll go get the .22, go wait out back for me',
       'I\'m not proud of you, your mom\'s not proud of you, no one is proud of you',
-      'Thou art a flesh-monger, a fool and a coward'
+      'Thou art a flesh-monger, a fool and a coward',
+      'Why don\'t you just go suck on a dead dog\'s nose',
+      'You Boil-dripping beef, fart-sniffing bubble butt!',
+      'You\'re a lewd, crude, rude, bag of pre-chewed food dude',
+      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!'
     ]
   }
 }
