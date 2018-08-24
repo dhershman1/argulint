@@ -26,21 +26,21 @@ module.exports = {
       'yoda'
     ],
     insults: [
-      'Math tutor',
-      'Mother lover',
-      'Mung tongue',
-      'Nearsighted gynecologist'
-      'Pinhead',
-      'Prison barber',
-      'Substitute chemistry teacher',
       'Why you little commie',
       'You boner jockey',
       'You crotch biscuit',
       'You garbage mammal',
       'You little douche socket',
+      'You Math tutor',
+      'You Mother lover',
+      'You Mung tongue',
+      'You Nearsighted gynecologist',
+      'You Pinhead',
+      'You Prison barber',
+      'You Substitute chemistry teacher',
       'You trash waffle',
       'You\'re a capitalist pig',
-      'You\'re a lazy knob',
+      'You\'re a lazy knob'
     ]
   },
   // Medium tier insults: Try to stick to a max of 7-8 words
@@ -56,8 +56,8 @@ module.exports = {
       'You lard sniffing poop herder',
       'You little anal stinking leg zoo',
       'You stupid seal drinking butt bender',
-      'You... you man! Stupid, stupid man!'
-      'You\'re such a butter humping melon sack',
+      'You... you man! Stupid, stupid man!',
+      'You\'re such a butter humping melon sack'
     ]
   },
   // Long tier insults: Get creative but not too much keep it interesting!
@@ -88,11 +88,11 @@ module.exports = {
       'Have you always hated yourself this much, or is this new',
       'I\'ll go get the .22, go wait out back for me',
       'Thou art a flesh-monger, a fool and a coward',
-      'why don\'t you just go suck on a dead dog\'s nose'
+      'why don\'t you just go suck on a dead dog\'s nose',
       'You are fart factory, slug-slimed, sack-of-rat-guts-in-cat-vomit, cheesy, scab-picked, pimple-squeezing finger bandage. A week old maggot burger with everything on it and flies on the side!',
       'You Boil-dripping beef, fart-sniffing bubble butt!',
       'You lewd, crude, rude, bag of pre-chewed food dude',
-      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!',
+      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!'
     ]
   }
 }
