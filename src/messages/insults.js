@@ -33,7 +33,14 @@ module.exports = {
       'You little douche socket',
       'You trash waffle',
       'You\'re a capitalist pig',
-      'You\'re a lazy knob'
+      'You\'re a lazy knob',
+      'Substitute chemistry teacher',
+      'Mung tongue',
+      'Math tutor',
+      'Pinhead',
+      'Prison barber',
+      'Mother lover',
+      'Nearsighted gynecologist'
     ]
   },
   // Medium tier insults: Try to stick to a max of 7-8 words
@@ -46,7 +53,11 @@ module.exports = {
       'You lard sniffing poop herder',
       'You little anal stinking leg zoo',
       'You stupid seal drinking butt bender',
-      'You\'re such a butter humping melon sack'
+      'You\'re such a butter humping melon sack',
+      'In your face, camel cake!',
+      'In your rear, cow derrière',
+      'Lying, crying, spying, prying ultra-pig',
+      'You... you man! Stupid, stupid man!'
     ]
   },
   // Long tier insults: Get creative but not too much keep it interesting!
@@ -76,7 +87,12 @@ module.exports = {
       'Do you have to leave so soon? I was just about to poison the tea',
       'Have you always hated yourself this much, or is this new',
       'I\'ll go get the .22, go wait out back for me',
-      'Thou art a flesh-monger, a fool and a coward'
+      'Thou art a flesh-monger, a fool and a coward',
+      'You Boil-dripping beef, fart-sniffing bubble butt!',
+      'You are fart factory, slug-slimed, sack-of-rat-guts-in-cat-vomit, cheesy, scab-picked, pimple-squeezing finger bandage. A week old maggot burger with everything on it and flies on the side!',
+      'You lewd, crude, rude, bag of pre-chewed food dude',
+      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!',
+      'why don\'t you just go suck on a dead dog\'s nose'
     ]
   }
 }
