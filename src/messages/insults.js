@@ -39,6 +39,7 @@ module.exports = {
       'You prison barber',
       'You substitute chemistry teacher',
       'You trash waffle',
+      'You waste of oxygen',
       'You\'re a capitalist pig',
       'You\'re a lazy knob'
     ]
@@ -52,6 +53,7 @@ module.exports = {
       'In your face, camel cake!',
       'In your rear, cow derrière',
       'Lying, crying, spying, prying ultra-pig',
+      'Remind me to always bet against you',
       'Why you fart pimping melon breeder',
       'Why you sheep sucking earwax poker',
       'You lard sniffing poop herder',
