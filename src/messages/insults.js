@@ -89,7 +89,6 @@ module.exports = {
       'I\'ll go get the .22, go wait out back for me',
       'Thou art a flesh-monger, a fool and a coward',
       'Why don\'t you just go suck on a dead dog\'s nose',
-      'You are fart factory, slug-slimed, sack-of-rat-guts-in-cat-vomit, cheesy, scab-picked, pimple-squeezing finger bandage. A week old maggot burger with everything on it and flies on the side!',
       'You Boil-dripping beef, fart-sniffing bubble butt!',
       'You\'re a lewd, crude, rude, bag of pre-chewed food dude',
       'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!'
