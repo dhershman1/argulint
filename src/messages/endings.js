@@ -6,7 +6,6 @@
 
 // All endings that do not meet the above rules will be met with an instant decline of their PR
 
-// Endings should be a maximum of 7 words
 module.exports = [
   'ctrl + a + del',
   'Fix it! Fix it! Fix it!',
