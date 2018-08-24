@@ -11,7 +11,10 @@ module.exports = [
   'ctrl + a + del',
   'Fix it! Fix it! Fix it!',
   'I hope you\'re happy',
-  'thanks, I hate it',
-  'this is why I have trust issues',
-  'throw it away'
+  'I think we\'re done here',
+  'Looks like we need a stricter hiring process',
+  'Please... Stop... By all that is holy...',
+  'Thanks, I hate it',
+  'This is why I have trust issues',
+  'Throw it away'
 ]
