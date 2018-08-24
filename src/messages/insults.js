@@ -50,8 +50,6 @@ module.exports = {
     ]
   },
   // Long tier insults: Get creative but not too much keep it interesting!
-  // Long insults remove the "You're such a" at the beginning
-  // (?) = possibly subject to change, based on how we handle the wall of text problems
   long: {
     triggers: [
       'brace-style',
