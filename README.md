@@ -3,13 +3,7 @@ Tired of your linter not making you feel like the terrible developer you really 
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-## Contributing
-
-PRs fully welcome, come up with some sick nasty messaging combos, improve the linter, or whatever!
-
-This project follows the [JS Standard Style](https://standardjs.com/) guidelines
-
-The rules are simple, please follow them as they are marked inside of both `insults.js` and `endings.js` any PR not following these rules will be declined
+[Click here to read about contributing](https://github.com/dhershman1/argulint/blob/master/CONTRIBUTING.md)
 
 ## What
 
@@ -23,3 +17,21 @@ The only goal is to have a little fun with your linting.
 - Which means it still works with standard options in the `package.json` as well as the `--fix` argument in the CLI
 - Re formats the output with _some_ extra organization
 - Insults your mistakes for fun
+
+## How To
+
+Intall:
+
+`npm i -D argulint`
+
+Once installed you would use argulint just like you can use the `standardjs` linter via the CLI. It supports the `--fix` flag as well as using the standard options built into your `package.json` file.
+
+Usage example:
+
+`argulint src/place/*.js`
+
+Or with the flag:
+
+`argulint --fix src/place/*.js`
+
+**Note: There is no API this is strictly used within the CLI**
