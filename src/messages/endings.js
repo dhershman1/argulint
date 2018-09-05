@@ -7,10 +7,14 @@
 // All endings that do not meet the above rules will be met with an instant decline of their PR
 
 module.exports = [
+  '[Forced laughing]',
   'ctrl + a + del',
   'Fix it! Fix it! Fix it!',
+  'Hello darkness my old friend...',
+  'I don\'t know what I expected.',
   'I hope you\'re happy',
   'I think we\'re done here',
+  'I\'m sorry, I\'m unclear about what it is you do...',
   'Looks like we need a stricter hiring process',
   'Please... Stop... By all that is holy...',
   'Thanks, I hate it',
