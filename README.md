@@ -61,27 +61,26 @@ Where:
 Example output looks something like this:
 
 ```
-===========Totals===========
-# of Errors: 6 - Did we forget about an oopsie?
+==============Totals==============
+# of Errors: 6 - Alright you're done get out.
 # Fixable: 5 - Put me in coach!
-============================
+==================================
 
-/path/to/argulint/tests/index.js
-=====================================
+File: /path/to/argulint/tests/index.js
+==============Stats==============
 # of Errors: 6 - Uh oh!
-# Fixable: 5 - Leave it to the pros!
-=====================================
-Lying, crying, spying, prying ultra-pig
-   Extra semicolon. on line 1:10 Please... Stop... By all that is holy...
-Lying, crying, spying, prying ultra-pig
-   Extra semicolon. on line 2:10 I think we're done here
-In your face, camel cake!
-   Extra semicolon. on line 3:10 Fix it! Fix it! Fix it!
-Lying, crying, spying, prying ultra-pig
-   Extra semicolon. on line 4:10 [Forced laughing]
-You Boil-dripping beef, fart-sniffing bubble butt!
-   'g' is assigned a value but never used. between line 5:7 and 5:8 Hello darkness my old friend...
-In your rear, cow derrière
-   Extra semicolon. on line 5:13 Hello darkness my old friend...
-
+# Fixable: 5 - I got this.
+==================================
+You garbage mammal!
+   Extra semicolon. on line 1:10 I think we're done here
+You boner jockey!
+   Extra semicolon. on line 2:10 Thanks, I hate it
+You're a capitalist pig!
+   Extra semicolon. on line 3:10 [Forced laughing]
+Remind me to always bet against you.
+   Extra semicolon. on line 4:10 This is why I have trust issues
+I think you are a general offense and everyone should beat you.
+   'g' is assigned a value but never used. between line 5:7 and 5:8 ctrl + a + del
+Lying, crying, spying, prying ultra-pig!
+   Extra semicolon. on line 5:13 Thanks, I hate it
 ```

@@ -22,7 +22,7 @@ module.exports = [
   'In your rear, cow derrière!',
   'Lying, crying, spying, prying ultra-pig!',
   'Not as much brains as ear wax.',
-  'Remind me to always bet against you!',
+  'Remind me to always bet against you.',
   'Thou art a flesh-monger, a fool and a coward.',
   'Why don\'t you just go suck on a dead dog\'s nose!',
   'Why you fart pimping melon breeder!',
