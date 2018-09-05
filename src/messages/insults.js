@@ -30,7 +30,9 @@ module.exports = {
       'You boner jockey',
       'You crotch biscuit',
       'You garbage mammal',
+      'You lazy knob',
       'You little douche socket',
+      'You loathsome toad',
       'You math tutor',
       'You mother lover',
       'You mung tongue',
@@ -40,8 +42,7 @@ module.exports = {
       'You substitute chemistry teacher',
       'You trash waffle',
       'You waste of oxygen',
-      'You\'re a capitalist pig',
-      'You\'re a lazy knob'
+      'You\'re a capitalist pig'
     ]
   },
   // Medium tier insults: Try to stick to a max of 7-8 words
@@ -53,6 +54,7 @@ module.exports = {
       'In your face, camel cake!',
       'In your rear, cow derrière',
       'Lying, crying, spying, prying ultra-pig',
+      'Not as much brains as ear wax',
       'Remind me to always bet against you',
       'Why you fart pimping melon breeder',
       'Why you sheep sucking earwax poker',
@@ -89,14 +91,16 @@ module.exports = {
     insults: [
       'Do you have no self respect?',
       'Do you have to leave so soon? I was just about to poison the tea',
-      'Have you always hated yourself this much, or is this new',
+      'Have you always hated yourself this much, or is this new?',
+      'I think you are a general offense and everyone should beat you.',
+      'I would challenge you to a battle of wits, but I see you are unarmed',
       'I\'ll go get the .22, go wait out back for me',
       'I\'m not proud of you, your mom\'s not proud of you, no one is proud of you',
       'Thou art a flesh-monger, a fool and a coward',
       'Why don\'t you just go suck on a dead dog\'s nose',
       'You Boil-dripping beef, fart-sniffing bubble butt!',
-      'You\'re a lewd, crude, rude, bag of pre-chewed food dude',
-      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!'
+      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!',
+      'You\'re a lewd, crude, rude, bag of pre-chewed food dude'
     ]
   }
 }

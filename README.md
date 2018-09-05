@@ -35,3 +35,23 @@ Or with the flag:
 `argulint --fix src/place/*.js`
 
 **Note: There is no API this is strictly used within the CLI**
+
+## Generation
+
+Messages are generated in the following format:
+
+> We check the rule broken, if it falls into one of the categories listed for small or long it will use an insult from there, OR it will fallback to the medium insults
+
+Once all the strings are picked the message itself formats like this:
+
+```
+{insult} {mid} {linting error} {lines} {ending}
+```
+
+Where:
+
+- `insult` is the actual picked insult
+- `mid` is a generated (hopefully to the best) of the linter abilities to adjust grammar for a sentence
+- `linting error` is the actual error that was found
+- `lines` is the line(s) and column(s) of the error in this format: `line:column`
+- `ending` is the chosen ending from our endings list

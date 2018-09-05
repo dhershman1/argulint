@@ -39,12 +39,11 @@ const generate = list => {
       ? `between line ${x.line}:${x.column} and ${x.endLine}:${x.endColumn}`
       : `on line ${x.line}:${x.column}`
     const mid = adjustGrammar(x.message)
-    const tier = getTier(x.ruleId)
-    const { insults } = insultData[tier]
+    const { insults } = insultData[getTier(x.ruleId)]
     const ins = insults[randoNum(insults.length)]
     const end = endings[randoNum(endings.length)]
 
-    console.log(`${ins}!
+    console.log(`${ins}
   ${mid} ${x.message} ${lines} ${end}`)
   })
 }
