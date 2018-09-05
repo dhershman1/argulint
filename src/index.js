@@ -1,19 +1,22 @@
-const generate = require('./messages')
 const branch = require('kyanite/branch')
-const lte = require('kyanite/lte')
+const between = require('kyanite/between')
+const gt = require('kyanite/gt')
+
+const generate = require('./messages')
+const { errMsgs, fixableMsgs } = require('./messages/general')
+
+const genRando = by => Math.floor(Math.random() * by)
 
 const errCountStat = count => {
-  const fn = lte(count)
-
-  if (fn(10)) {
-    return 'Did we forget about an oopsie?'
+  const tier = {
+    low: between(1, 20, count),
+    mid: between(21, 40, count),
+    high: gt(count, 41)
   }
 
-  if (fn(20)) {
-    return 'Seriously?'
-  }
+  const data = errMsgs[Object.keys(tier).find(k => tier[k])]
 
-  return 'Alright you\'re done get out.'
+  return data[genRando(data.length)]
 }
 
 const argulint = ({ results, errorCount, fixable }) => {
@@ -23,16 +26,16 @@ const argulint = ({ results, errorCount, fixable }) => {
     x => errCountStat(x)
   )
 
-  console.log('=======Totals=======')
+  console.log('===========Totals===========')
   console.log(`# of Errors: ${errorCount} - ${errMsg(errorCount)}`)
-  console.log(`# Fixable: ${fixable} - Put me in coach!`)
-  console.log('====================')
+  console.log(`# Fixable: ${fixable} - ${fixableMsgs[genRando(fixableMsgs.length)]}`)
+  console.log('============================')
 
   results.forEach(x => {
     console.log('\n', x.filePath)
     console.log('=====================================')
     console.log(`# of Errors: ${x.errorCount} - ${errMsg(x.errorCount)}`)
-    console.log(`# Fixable: ${x.fixableErrorCount}`)
+    console.log(`# Fixable: ${x.fixableErrorCount} - ${fixableMsgs[genRando(fixableMsgs.length)]}`)
     console.log('=====================================')
     generate(x.messages)
   })
