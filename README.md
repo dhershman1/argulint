@@ -45,13 +45,13 @@ Messages are generated in the following format:
 Once all the strings are picked the message itself formats like this:
 
 ```
-{insult} {mid} {linting error} {lines} {ending}
+{insult}
+  {linting error} {lines} {ending}
 ```
 
 Where:
 
 - `insult` is the actual picked insult
-- `mid` is a generated (hopefully to the best) of the linter abilities to adjust grammar for a sentence
 - `linting error` is the actual error that was found
 - `lines` is the line(s) and column(s) of the error in this format: `line:column`
 - `ending` is the chosen ending from our endings list
