@@ -5,15 +5,13 @@ Tired of your linter not making you feel like the terrible developer you really 
 
 [Click here to read about contributing](https://github.com/dhershman1/argulint/blob/master/.github/CONTRIBUTING.md)
 
-## What
-
 Argulint is a little linter wrapper that runs the [`standardjs`](https://standardjs.com/) lint process but adds a fun twist to it.
 
 The only goal is to have a little fun with your linting.
 
 ## Features
 
-- A simple CLI tool, it is just running [`standardjs`](https://standardjs.com/) under the hood
+- A simple CLI tool, it's just running [`standardjs`](https://standardjs.com/) under the hood
 - Which means it still works with standard options in the `package.json` as well as the `--fix` argument in the CLI
 - Re formats the output with _some_ extra organization
 - Insults your mistakes for fun
@@ -39,10 +37,6 @@ Or with the flag:
 ## Generation
 
 Messages are generated in the following format:
-
-> We check the rule broken, if it falls into one of the categories listed for small or long it will use an insult from there, OR it will fallback to the medium insults
-
-Once all the strings are picked the message itself formats like this:
 
 ```
 {insult}
