@@ -5,102 +5,50 @@
 // Rule #3: Please when adding new insults keep the arrays alphabetized
 
 // All insults that do not meet the above rules will be met with an instant decline of their PR
-module.exports = {
-  // Short tier insults: Try to keep it to only a few words
-  short: {
-    triggers: [
-      'eol-last',
-      'indent',
-      'keyword-spacing',
-      'new-cap',
-      'new-parens',
-      'no-debugger',
-      'no-extra-parens',
-      'no-fallthrough',
-      'no-floating-decimal',
-      'no-multiple-empty-lines',
-      'no-self-assign',
-      'no-self-compare',
-      'no-tabs',
-      'quotes',
-      'yoda'
-    ],
-    insults: [
-      'Why you little commie',
-      'You boner jockey',
-      'You crotch biscuit',
-      'You garbage mammal',
-      'You lazy knob',
-      'You little douche socket',
-      'You loathsome toad',
-      'You math tutor',
-      'You mother lover',
-      'You mung tongue',
-      'You nearsighted gynecologist',
-      'You pinhead',
-      'You prison barber',
-      'You substitute chemistry teacher',
-      'You trash waffle',
-      'You waste of oxygen',
-      'You\'re a capitalist pig'
-    ]
-  },
-  // Medium tier insults: Try to stick to a max of 7-8 words
-  medium: {
-    insults: [
-      'Don\'t quit your day job. Oh, wait...',
-      'Gah, what a horse faced butter drinker',
-      'Go away you, wart milking doodle bag',
-      'In your face, camel cake!',
-      'In your rear, cow derrière',
-      'Lying, crying, spying, prying ultra-pig',
-      'Not as much brains as ear wax',
-      'Remind me to always bet against you',
-      'Why you fart pimping melon breeder',
-      'Why you sheep sucking earwax poker',
-      'You lard sniffing poop herder',
-      'You little anal stinking leg zoo',
-      'You stupid seal drinking butt bender',
-      'You... you man! Stupid, stupid man!',
-      'You\'re such a butter humping melon sack',
-      'You\'re the reason we don\'t have nice things'
-    ]
-  },
-  // Long tier insults: Get creative but not too much keep it interesting!
-  long: {
-    triggers: [
-      'brace-style',
-      'camelcase',
-      'comma-dangle',
-      'comma-style',
-      'curly',
-      'eqeqeq',
-      'no-const-assign',
-      'no-eval',
-      'no-ex-assign',
-      'no-extend-native',
-      'no-extra-boolean-cast',
-      'no-func-assign',
-      'no-global-assign',
-      'no-tabs',
-      'no-throw-literal',
-      'no-unreachable',
-      'no-unsafe-finally',
-      'no-unused-vars'
-    ],
-    insults: [
-      'Do you have no self respect?',
-      'Do you have to leave so soon? I was just about to poison the tea',
-      'Have you always hated yourself this much, or is this new?',
-      'I think you are a general offense and everyone should beat you.',
-      'I would challenge you to a battle of wits, but I see you are unarmed',
-      'I\'ll go get the .22, go wait out back for me',
-      'I\'m not proud of you, your mom\'s not proud of you, no one is proud of you',
-      'Thou art a flesh-monger, a fool and a coward',
-      'Why don\'t you just go suck on a dead dog\'s nose',
-      'You Boil-dripping beef, fart-sniffing bubble butt!',
-      'You two-toned zebra-headed, slime-coated, pimple-farmin\' paramecium brain, munchin\' on your own mucus, suffering from Peter Pan envy!',
-      'You\'re a lewd, crude, rude, bag of pre-chewed food dude'
-    ]
-  }
-}
+
+// Please keep insults to 100 characters or less
+module.exports = [
+  'Do you have no self respect?',
+  'Do you have to leave so soon? I was just about to poison the tea.',
+  'Don\'t quit your day job. Oh, wait...',
+  'Gah, what a horse faced butter drinker.',
+  'Go away you, wart milking doodle bag.',
+  'Have you always hated yourself this much, or is this new?',
+  'I think you are a general offense and everyone should beat you.',
+  'I would challenge you to a battle of wits, but I see you are unarmed.',
+  'I\'ll go get the .22, go wait out back for me.',
+  'I\'m not proud of you, your mom\'s not proud of you, no one is proud of you.',
+  'In your face, camel cake!',
+  'In your rear, cow derrière!',
+  'Lying, crying, spying, prying ultra-pig!',
+  'Not as much brains as ear wax.',
+  'Remind me to always bet against you!',
+  'Thou art a flesh-monger, a fool and a coward.',
+  'Why don\'t you just go suck on a dead dog\'s nose!',
+  'Why you fart pimping melon breeder!',
+  'Why you little commie!',
+  'Why you sheep sucking earwax poker!',
+  'You Boil-dripping beef, fart-sniffing bubble butt!',
+  'You boner jockey!',
+  'You crotch biscuit!',
+  'You garbage mammal!',
+  'You lard sniffing poop herder.',
+  'You lazy knob.',
+  'You little anal stinking leg zoo.',
+  'You little douche socket.',
+  'You loathsome toad.',
+  'You mother lover!',
+  'You mung tongue!',
+  'You nearsighted gynecologist!',
+  'You pinhead!',
+  'You prison barber!',
+  'You stupid seal drinking butt bender.',
+  'You substitute chemistry teacher.',
+  'You trash waffle!',
+  'You waste of oxygen!',
+  'You... you man! Stupid, stupid man!',
+  'You\'re a capitalist pig!',
+  'You\'re a lewd, crude, rude, bag of pre-chewed food dude.',
+  'You\'re such a butter humping melon sack!',
+  'You\'re the reason we don\'t have nice things.'
+]
