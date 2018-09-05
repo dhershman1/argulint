@@ -1,6 +1,6 @@
 // These messages are built for the totals screen
 // Example:
-//=====================================
+// =====================================
 // # of Errors: 25 - Alright you're done get out. <-- This guy here
 // # Fixable: 12
 // =====================================
