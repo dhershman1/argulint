@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "lint": "standard src/**/*.js",
-    "test": "bin/argulint tests/index.js",
+    "test": "bin/argulint tests/*.js",
     "fix": "bin/argulint --fix tests/index.js"
   },
   "repository": {
