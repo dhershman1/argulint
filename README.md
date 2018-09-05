@@ -55,3 +55,34 @@ Where:
 - `linting error` is the actual error that was found
 - `lines` is the line(s) and column(s) of the error in this format: `line:column`
 - `ending` is the chosen ending from our endings list
+
+## Example
+
+Example output looks something like this:
+
+```
+=======Totals=======
+# of Errors: 31 - Alright you're done get out.
+# Fixable: 17 - Put me in coach!
+====================
+
+ /Users/dhershman/Documents/projects/modules/argulint/tests/index.js
+=====================================
+# of Errors: 6 - Did we forget about an oopsie?
+# Fixable: 5
+=====================================
+You little anal stinking leg zoo!
+  You didn't notice the Extra semicolon. on line 1:10 [Forced laughing]
+In your face, camel cake!!
+  You didn't notice the Extra semicolon. on line 2:10 Throw it away
+You... you man! Stupid, stupid man!!
+  You didn't notice the Extra semicolon. on line 3:10 Throw it away
+Go away you, wart milking doodle bag!
+  You didn't notice the Extra semicolon. on line 4:10 Please... Stop... By all that is holy...
+I'm not proud of you, your mom's not proud of you, no one is proud of you!
+  The 'g' is assigned a value but never used. between line 5:7 and 5:8 Thanks, I hate it
+You little anal stinking leg zoo!
+  You didn't notice the Extra semicolon. on line 5:13 Fix it! Fix it! Fix it!
+
+(This is just showing the first file from the test list)
+```
