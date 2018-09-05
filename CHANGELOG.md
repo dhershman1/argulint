@@ -1,8 +1,18 @@
 # Changelog
 
+## v0.2.0
+
+### Improved
+
+- Removed the Tier system based around insults. This adds more variety and makes processing way easier
+- Removed the Tier system based around err messages. Again adding more variety and easier processing
+- Renamed `general.js` to `stats.js`
+- Some slight reformatting of output
+
 ## v0.1.0
 
 ### New
+
 - The error messages next to the `# of errors` is now randomly generated!
   - Simply add messages to the `general.js` `errMsgs` and choose which tier to add to!
   - Example: `# of Errors: 31 - Seriously?`
