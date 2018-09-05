@@ -1,6 +1,6 @@
 {
   "name": "argulint",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tired of your linter being nice to you? Want to be treated like the terrible developer you are? Welcome.",
   "main": "index.js",
   "bin": {

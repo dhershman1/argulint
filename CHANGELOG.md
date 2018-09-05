@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.2.1
+
+### Improved
+
+- Updated the README examples
+- Tweaked some punctuation
+
 ## v0.2.0
 
 ### Improved
