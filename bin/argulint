@@ -3,7 +3,6 @@
 const argulint = require('../src/index.js')
 const standard = require('standard')
 const path = require('path')
-const { remove } = require('kyanite')
 
 const opts = require(path.resolve(process.cwd(), 'package.json')).standard || {}
 const fixIndex = process.argv.indexOf('--fix')
@@ -11,7 +10,7 @@ let files = []
 
 if (fixIndex !== -1) {
   opts.fix = true
-  files = remove(fixIndex, process.argv).splice(2)
+  files = [...process.argv.slice(0, fixIndex), ...process.argv.slice(fixIndex + 1)].splice(2)
 } else {
   files = process.argv.splice(2)
 }

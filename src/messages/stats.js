@@ -14,8 +14,9 @@ module.exports = {
     'Uh oh!'
   ],
   fixableMsgs: [
-    'Put me in coach!',
     'I got this.',
-    'Leave it to the pros!'
+    'Leave it to the pros!',
+    'Put me in coach!',
+    'Ready to throw in the towel?'
   ]
 }
