@@ -3,7 +3,7 @@
 const argulint = require('../src/index.js')
 const standard = require('standard')
 const path = require('path')
-const remove = require('kyanite/remove')
+const { remove } = require('kyanite')
 
 const opts = require(path.resolve(process.cwd(), 'package.json')).standard || {}
 const fixIndex = process.argv.indexOf('--fix')
@@ -19,19 +19,19 @@ if (fixIndex !== -1) {
 if (!files.length) {
   console.error('You forgot to provide some paths you fool!')
 
-  return process.exit(1)
-}
+  process.exit(1)
+} else {
+  standard.lintFiles(files, opts, (err, { results, errorCount, fixableErrorCount }) => {
+    if (err) {
+      console.error(err)
 
-standard.lintFiles(files, opts, (err, { results, errorCount, fixableErrorCount }) => {
-  if (err) {
-    console.error(err)
+      return process.exit(1)
+    }
 
-    return process.exit(1)
-  }
-
-  return argulint({
-    results,
-    errorCount,
-    fixable: fixableErrorCount
+    return argulint({
+      results,
+      errorCount,
+      fixable: fixableErrorCount
+    })
   })
-})
+}

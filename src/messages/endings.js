@@ -8,7 +8,7 @@
 
 module.exports = [
   '[Forced laughing]',
-  'ctrl + a + del',
+  'Everythings on fire now.',
   'Fix it! Fix it! Fix it!',
   'Hello darkness my old friend...',
   'I don\'t know what I expected.',
